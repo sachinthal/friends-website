@@ -3,38 +3,98 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Our Friends Group</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>දාහෙම් පාසල් එකමුතු</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f3f4f6;
+      color: #1f2937;
+      margin: 0;
+    }
+    header {
+      background-color: #2563eb;
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    section {
+      max-width: 960px;
+      margin: 3rem auto;
+      padding: 1.5rem;
+      background: white;
+      border-radius: 1rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 1rem;
+    }
+    .gallery div {
+      background: white;
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      border-radius: 0.5rem;
+      text-align: center;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.875rem;
+      color: #6b7280;
+      margin-top: 3rem;
+      padding-bottom: 2rem;
+    }
+    .whatsapp-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      padding: 15px;
+      font-size: 24px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      text-decoration: none;
+      z-index: 1000;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body>
 
   <!-- Banner -->
-  <header class="bg-blue-600 text-white p-8 text-center shadow-md">
-    <h1 class="text-4xl font-bold">🔥 දහම් පාසල් එකමුතු 🔥</h1>
+  <header>
+    <h1 class="text-4xl font-bold">🔥 දාහෙම් පාසල් එකමුතු 🔥</h1>
     <p class="mt-2 text-lg">Together Forever • Fun • Memories</p>
   </header>
 
   <!-- About Section -->
-  <section class="p-6 max-w-3xl mx-auto mt-10 bg-white shadow-md rounded-xl">
+  <section>
     <h2 class="text-2xl font-bold mb-4">About Us</h2>
     <p class="text-lg">We are a close-knit group of friends who share unforgettable memories, inside jokes, and a whole lot of laughter. From school days to now, we’ve stuck together through thick and thin!</p>
   </section>
 
   <!-- Photo Gallery Placeholder -->
-  <section class="p-6 max-w-5xl mx-auto mt-10">
+  <section>
     <h2 class="text-2xl font-bold mb-4">Our Moments 📸</h2>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-      <div class="bg-white p-4 shadow rounded">📷 Photo 1</div>
-      <div class="bg-white p-4 shadow rounded">📷 Photo 2</div>
-      <div class="bg-white p-4 shadow rounded">📷 Photo 3</div>
-      <div class="bg-white p-4 shadow rounded">📷 Photo 4</div>
+    <div class="gallery">
+      <div>📷 Photo 1</div>
+      <div>📷 Photo 2</div>
+      <div>📷 Photo 3</div>
+      <div>📷 Photo 4</div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="text-center text-sm text-gray-600 mt-10 pb-6">
+  <footer>
     Made with ❤️ by Our Group | © 2025
   </footer>
+
+  <!-- WhatsApp Floating Icon -->
+  <a class="whatsapp-icon" href="https://chat.whatsapp.com/YOUR-GROUP-LINK" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
 </body>
 </html>
